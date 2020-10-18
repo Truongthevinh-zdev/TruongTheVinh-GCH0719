@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="doAddProduct" method="post">
+        <table>
+            <tr>
+                <td>Customer</td>
+                <td><input type="text" name="txtCustomer" value="{{oldValue.Customer}}"</td>
+            </tr>
+            <tr>
+                <td>Product</td>
+                <td><input type="text" name="txtProduct" value="{{oldValue.Product}}"</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td><input type="text" name="txtPrice" value="{{oldValue.Price}}"</td>
+            </tr>
+            <tr>
+                <td>Quantity</td>
+                <td><input type="number" name="txtQuantity" value="{{oldValue.Quantity}}"</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td><input type="text" name="txtTotal" value="{{oldValue.Total}}"</td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Add Product"</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

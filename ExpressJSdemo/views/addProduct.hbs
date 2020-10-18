@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+      .errorText{
+          color: red;
+      }
+  </style>
+</head>
+<body>
+    <h1>Add Product</h1>
+    
+
+    <form action="/doAddProduct" method="post">
+    <div class="form-group" style="margin-left: 60px;">
+      <table>
+        <tr>
+            <td>Id</td>
+            <td><input type="text" name="txtId" value="{{oldValues.id}}"></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="txtName" value="{{oldValues.name}}"></td>
+            <span class = "errorText">{{error.nameError}}</span>
+     </tr>
+        <tr>
+            <td>Price</td>
+            <td><input type="text" name="txtPrice" value="{{oldValues.price}}"></td>
+        </tr>
+        <tr align="right">
+            <td colspan="2" class="btn btn-primary"><input type="submit" value="Add Product"></td>
+        </tr>
+    </table>
+    </div>
+    </form>
+</body>
+</html>
